@@ -31,11 +31,11 @@
 4.   Provide input to console following description
     
     **Input description**
-    '''
+
     The number of test cases t (1≤t≤1000) is in the first line of input, then t test cases follow
     separated by an empty line. In the first line of each test case there is a pair of integer numbers
     n, m separated by a single space, 1<=n <=182, 1<=m<=182.
-    '''
+
 
 5. From terminal press ` ctrl+d ` to run code, and ` ctrl+c ` to cancle input process.
 
@@ -53,7 +53,6 @@
 
 
     * Expected output:
-        
         3 2 1 0
         2 1 0 0
         1 0 0 1
