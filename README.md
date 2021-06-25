@@ -28,7 +28,7 @@
     npm start
     ```
     
-4.   Provide input to console following description
+4. Provide input to console following description
     
     **Input description**
 
@@ -37,7 +37,7 @@
     n, m separated by a single space, 1<=n <=182, 1<=m<=182.
 
 
-5. From terminal press ` ctrl+d ` to run code, and ` ctrl+c ` to cancle input process.
+5. After providing input in terminal, press ` ctrl+d ` to run code or ` ctrl+c ` to cancel process.
 
 
     ## Test sample
