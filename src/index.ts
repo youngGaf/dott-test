@@ -9,25 +9,24 @@ process.stdin.on('data', (input) => {
 });
 
 process.stdin.on('end', () => {
-    main(stdin_input)
+    processInput(stdin_input)
 });
 
 /**
 * Main function
-* Takes input from console, process and passes it to computing function
+* Takes input data, process and passes it to computing function
 *
 * @returns {void} nothing
 */
-const main = (input: string): void => {
+const processInput = (input: string): void => {
     const arr: string[] = input.trim().split("\n");
-    
     for(let i = 1; i < arr.length; i+=1){
         const value: string[] = arr[i].trim().split(' ');
         if(value.length > 1){
             const matrix_size: number[] = [parseInt(value[0]), parseInt(value[1])];
             const bitmap: string[] = arr.slice(i+1, matrix_size[0]+i+1);
-            
             computeDistance(matrix_size[0], matrix_size[1], bitmap);
+            i += matrix_size[0];
         }
     }
 
@@ -84,8 +83,8 @@ const computeDistance = (n: number, m: number, bitmapMatrix: string[]): void => 
         }
     }
     // Writes output to console
-    ans.forEach((el): void => {
-        console.log(el.join(' '));
+    ans.forEach((row): void => {
+        console.log(row.join(' '));
     });
 
 }
