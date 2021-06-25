@@ -11,15 +11,19 @@
 ## Steps to run code
 
 1. 📦 Install dependencies with command
-   ```bash
-   npm install
-  ```
+    
+    ```bash
+    npm install
+    ```
+
 2. Run command to build typescript file to javascript
-  ```bash
-   npm run build
-  ```
+   
+    ```bash
+    npm run build
+    ```
 
 3. Start program with command 
+    
     ```bash
     npm start
     ```
@@ -33,6 +37,25 @@
     n, m separated by a single space, 1<=n <=182, 1<=m<=182.
     '''
 
-5. Press `ctrl+d` or `cmd+d` to run code from terminal
+5. From terminal press ` ctrl+d ` to run code, and ` ctrl+c ` to cancle input process.
 
-    **Output is displayed in terminal**
+
+    ## Test sample
+
+    ```
+    * Input:              
+        
+        1
+        3 4
+        0001 
+        0011
+        0110
+
+
+    * Expected output:
+        
+        3 2 1 0
+        2 1 0 0
+        1 0 0 1
+
+    ```
